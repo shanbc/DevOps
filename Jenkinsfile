@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                cmd_exec('bat "mvn -DskipTests clean package"')
+                bat 'mvn -DskipTests clean package'
             }
         }
         stage("Test"){
             steps{
-                cmd_exec('bat "mvn test"')
+                bat 'mvn test'
             }
         }
     }
