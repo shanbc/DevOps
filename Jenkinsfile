@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                mvn '-DskipTests clean package'
+                echo '-DskipTests clean package'
             }
         }
         stage("Test"){
